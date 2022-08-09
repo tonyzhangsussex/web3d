@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CocaCola Models</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link href="http://fonts.cdnfonts.com/css/coca-cola-ii" rel="stylesheet">
+    <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script>
+    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'/>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-gallery text-success logo h1 align-self-center" href="index.html">
+                My CocaCola Journey
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#custom_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="custom_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Models.html">3D Models</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Close Header -->
+
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="custom_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Close Header -->
+
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="custom_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Start Section -->
+    <section class="container py-3">
+        <div class="row text-center pt-5 pb-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1">X3D Models</h1>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class=".col-xs-12 .col-md-8">
+                <div class="model3D">
+                    <x3d id="wire">
+                        <scene>
+                            <Viewpoint id="front" DEF='Camera001' description='Camera001' orientation='0 -1 0 -4.71239' position='-2500 781.498 -1.08716' fieldOfView='0.60243'> </Viewpoint>
+                            <Viewpoint id="left" DEF='Camera002' description='Camera002' orientation='0 -1 0 -3.14159' position='-500 900 -2500' fieldOfView='0.60243'></Viewpoint>
+                            <Viewpoint id="right" DEF='Camera003' description='Camera003' position='-500 900 2500' fieldOfView='0.60243'></Viewpoint>
+                            <Viewpoint id="back" DEF='Camera004' description='Camera004' orientation='0 -1 0 -1.5708' position='2500 900 0' fieldOfView='0.60243'></Viewpoint>
+                            <Viewpoint id="top" DEF='Camera005' description='Camera005' orientation='0.526836 -0.667 -0.526836 -1.96513' position='0 3000 0' fieldOfView='0.60243'></Viewpoint>
+                            <Viewpoint id="bottom" DEF='Camera006' description='Camera006' orientation='-0.551202 -0.626381 0.551202 -2.02241' position='0 -3000 0' fieldOfView='0.60243'></Viewpoint>
+                            <Switch whichChoice = "0" id='SceneSwitch'>
+                            <transform>
+                                <Inline url="coke1.x3d" nameSpaceName="MAIN" mapDEFToID="true"></Inline>
+                            </transform>
+                            <transform>
+                                <Inline url="Sprite.x3d" nameSpaceName="MAIN" mapDEFToID="true"></Inline>
+                            </transform>
+                            <transform>
+                                <Inline url="FantaCan.x3d" nameSpaceName="MAIN" mapDEFToID="true"></Inline>
+                            </transform>
+                            </Switch>
+                        </scene>
+                    </x3d>
+                </div>
+
+                <div class="h3 center text-center">
+                    <button type="button" class="btn btn-x3d btn-success" onclick="CokeScene();">CocaCola</button>
+                    <button type="button" class="btn btn-x3d btn-success" onclick="SpriteScene();">Sprite</button>
+                    <button type="button" class="btn btn-x3d btn-success" onclick="DrPepperScene();">Fanta</button> 
+
+                </div>
+
+
+                <div class="container main_contents">
+                    <div class="row">
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <h2> Camera </h2>            
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-secondary"onclick="cameraFront();">Front</button>
+                                        <button type="button" class="btn btn-secondary"onclick="cameraBack();">Back</button>
+                                        <button type="button" class="btn btn-secondary"onclick="cameraLeft();">Left</button>
+                                        <button type="button" class="btn btn-secondary"onclick="cameraRight();">Right</button>
+                                        <button type="button" class="btn btn-secondary"onclick="cameraTop();">Top</button>
+                                        <button type="button" class="btn btn-secondary"onclick="cameraBottom();">Bottom</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="card">
+                                <h2>Render</h2>           
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-secondary">Polygon</button>
+                                        <button type="button" class="btn btn-secondary" onclick="wireFrame()">Wireframe</button>
+                                        <button type="button" class="btn btn-secondary">Vertex</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="card">
+                                <h2>Lights</h2>            
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-secondary">Lights On</button>
+                                        <button type="button" class="btn btn-secondary">Lights Off</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+</div>
+    </section>
+    <!-- End Section -->
+
+    <!-- Start gallerys -->
+    <section class="bg-light py-5">
+        <div class="container my-4">
+            <div class="row text-center py-3">
+                <div class="col-lg-6 m-auto">
+                    <h1 class="h1">3D Image Album</h1>
+                </div>
+
+                <div class="col-lg-9 m-auto tempaltemo-carousel">
+                    <div class="row d-flex flex-row">
+                        <!--Controls-->
+                        <div class="col-1 align-self-center">
+                            <a class="h1" href="#custom-slide-gallery" role="button" data-bs-slide="prev">
+                                <i class="text-light fas fa-chevron-left"></i>
+                            </a>
+                        </div>
+                        <!--End Controls-->
+
+                        <!--Carousel Wrapper-->
+                        <div class="col">
+                            <div class="carousel slide carousel-multi-item pt-2 pt-md-0" id="custom-slide-gallery" data-bs-ride="carousel">
+                                <!--Slides-->
+                                <div class="carousel-inner product-links-wap" role="listbox">
+
+                                    <!--First slide-->
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-3 p-md-5">
+                                                <a><img class="img-fluid gallery-img" src="Gallery1.png" alt="gallery Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a><img class="img-fluid gallery-img" src="Gallery2.png" alt="gallery Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a ><img class="img-fluid gallery-img" src="Gallery3.png" alt="gallery Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a ><img class="img-fluid gallery-img" src="Gallery4.png" alt="gallery Logo"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End First slide-->
+
+                                    <!--Second slide-->
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-3 p-md-5">
+                                                <a><img class="img-fluid gallery-img" src="Gallery5.png" alt="gallery Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a><img class="img-fluid gallery-img" src="Gallery6.png" alt="gallery Logo"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End Second slide-->
+                                </div>
+                                <!--End Slides-->
+                            </div>
+                        </div>
+                        <!--End Carousel Wrapper-->
+
+                        <!--Controls-->
+                        <div class="col-1 align-self-center">
+                            <a class="h1" href="#custom-slide-gallery" role="button" data-bs-slide="next">
+                                <i class="text-light fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <!--End Controls-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End gallerys-->
+
+    <!-- footer -->
+<footer class="bg-dark" id="footer">
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            &copy; 2022 Mobile Web 3D App 
+                        </p>
+                        <ul class="list-inline text-right footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/scene.js"></script>
+        <!-- Font Awesome Account Kit -->
+  <script src="https://kit.fontawesome.com/ef5380f7a3.js" crossorigin="anonymous"></script>
+    <!-- End Script -->
+</body>
+
+</html>
